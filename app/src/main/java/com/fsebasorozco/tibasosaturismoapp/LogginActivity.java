@@ -13,8 +13,8 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
 
     Button Ingresar, Registro;
     EditText User, Pass;
-    static int bandera = 1, flag = 0;
-    static String user="me", pass="metoo", repass, email;
+    static int bandera = 0;
+    static String user, pass, repass, email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
         User = (EditText) findViewById(R.id.txtLogin);
         Pass = (EditText) findViewById(R.id.txtPass);
         if (id == R.id.btnRegistro) {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, RegistroActivity.class);
             startActivityForResult(intent, 1234);
         } else if (id == R.id.btnIngresar) {
             String Passw = null;

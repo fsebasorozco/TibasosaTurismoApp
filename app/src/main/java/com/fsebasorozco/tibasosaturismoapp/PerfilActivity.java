@@ -55,6 +55,24 @@ public class PerfilActivity extends AppCompatActivity {
             startActivityForResult(intent, 1234);
             setResult(RESULT_OK,intent);
             finish();
+        }else if(id == R.id.menubar2)
+        {
+            Intent intent = new Intent(this,SitesActivity.class);
+            startActivityForResult(intent,1111);
+            setResult(RESULT_OK,intent);
+            finish();
+        }else if(id == R.id.menuhotel2)
+        {
+            Intent intent = new Intent(this,SitesActivity.class);
+            startActivityForResult(intent,2222);
+            setResult(RESULT_OK,intent);
+            finish();
+        }else if(id == R.id.menurestaurant2)
+        {
+            Intent intent = new Intent(this,SitesActivity.class);
+            startActivityForResult(intent,3333);
+            setResult(RESULT_OK,intent);
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
