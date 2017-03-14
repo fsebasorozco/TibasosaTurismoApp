@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fsebasorozco.tibasosaturismoapp.SitesActivity">
+    <item
+        android:id="@+id/perfil1"
+        android:title="@string/menuover" />
+    <item
+        android:id="@+id/menubar3"
+        android:title="@string/menubar"/>
+    <item
+        android:id="@+id/menuhotel3"
+        android:title="@string/menuhotel"/>
+    <item
+        android:id="@+id/menurestaurant3"
+        android:title="@string/menurestaurant"/>
+    <item
+        android:id="@+id/menuend2"
+        android:title="@string/menumain"/>
+</menu>

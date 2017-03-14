@@ -4,6 +4,17 @@
         android:id="@+id/menuover"
         android:title="@string/menuover"/>
     <item
+        android:id="@+id/menubar1"
+        android:title="@string/menubar"/>
+    <item
+        android:id="@+id/menuhotel1"
+        android:title="@string/menuhotel"/>
+    <item
+        android:id="@+id/menurestaurant1"
+        android:title="@string/menurestaurant"/>
+    <item
         android:id="@+id/menuend"
         android:title="@string/menumain"/>
 </menu>
+
+
