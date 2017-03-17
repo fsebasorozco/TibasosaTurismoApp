@@ -58,18 +58,21 @@ public class PerfilActivity extends AppCompatActivity {
         }else if(id == R.id.menubar2)
         {
             Intent intent = new Intent(this,SitesActivity.class);
+            intent.putExtra("categoria","sitios");
             startActivityForResult(intent,1111);
             setResult(RESULT_OK,intent);
             finish();
         }else if(id == R.id.menuhotel2)
         {
             Intent intent = new Intent(this,SitesActivity.class);
+            intent.putExtra("categoria","hoteles");
             startActivityForResult(intent,2222);
             setResult(RESULT_OK,intent);
             finish();
         }else if(id == R.id.menurestaurant2)
         {
             Intent intent = new Intent(this,SitesActivity.class);
+            intent.putExtra("categoria","restaurantes");
             startActivityForResult(intent,3333);
             setResult(RESULT_OK,intent);
             finish();

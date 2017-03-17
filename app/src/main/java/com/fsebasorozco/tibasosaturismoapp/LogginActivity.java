@@ -87,6 +87,10 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
             Toast toast1 =
             Toast.makeText(getApplicationContext(), "User" + user+"Pass" + pass + "Email" + email, Toast.LENGTH_SHORT);
             toast1.show();
+        }else if (requestCode == 4567 && resultCode==RESULT_CANCELED)
+        {
+            Toast toast1 = Toast.makeText(getApplicationContext(),"Registro cancelado",Toast.LENGTH_SHORT);
+            toast1.show();
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

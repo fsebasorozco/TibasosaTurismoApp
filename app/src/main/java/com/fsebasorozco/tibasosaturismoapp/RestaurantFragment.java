@@ -12,14 +12,30 @@ import android.view.ViewGroup;
 
 public class RestaurantFragment extends Fragment {
 
+
+        private int categoria;
         public RestaurantFragment() {
             // empty constructor
         }
 
-        @Override
+    public void setCategoria(int categoria) {
+        this.categoria = categoria;
+    }
+
+    @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-            final View view = inflater.inflate(R.layout.fragment_restaurant, container, false);
-            return view;
+            switch(categoria){
+                case 0:
+                    final View view1 = inflater.inflate(R.layout.fragment_restaurant, container, false);
+                    return view1;
+                case 1:
+                    final View view2 = inflater.inflate(R.layout.fragment_restaurant2, container, false);
+                    return view2;
+                case 2:
+                    final View view3 = inflater.inflate(R.layout.fragment_restaurant3, container, false);
+                    return view3;
+                default:return null;
+            }
         }
 }
 

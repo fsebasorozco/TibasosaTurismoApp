@@ -35,9 +35,10 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.btnCancel) {
-            Intent intent = new Intent(this, RegistroActivity.class);
-            startActivityForResult(intent, 1234);
+            Intent intent = new Intent(this, LogginActivity.class);
+//            startActivityForResult(intent, 4567);
             setResult(RESULT_CANCELED,intent);
+            finish();
         } else if(id == R.id.btnSign){
             String strUserName = txtUser.getText().toString();
             String strPass = txtPass.getText().toString();
