@@ -1,10 +1,7 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.fsebasorozco.tibasosaturismoapp.SitesActivity">
-
-    <!-- TODO: Update blank fragment layout -->
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +15,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:src="@drawable/tierradefeijoa"
+                android:src="@drawable/casonaboyacense"
                 android:layout_weight="1"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -29,7 +26,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Res1"
+                    android:text="@string/Res3"
                     android:textStyle="bold"
                     android:textSize="25dp"
                     android:textAlignment="center"/>
@@ -37,9 +34,8 @@
                     android:layout_margin="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Dres1"/>
+                    android:text="@string/Dres3"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>

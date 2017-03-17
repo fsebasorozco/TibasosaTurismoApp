@@ -5,13 +5,14 @@
     android:layout_height="match_parent"
 
     tools:context="com.fsebasorozco.tibasosaturismoapp.LogginActivity">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo1"
         android:layout_weight="2.22">
 
+        <!--        android:background="@drawable/fondo1" -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -59,23 +60,25 @@
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/btnIngresar"
                 android:textSize="20dp"
+                android:background="@color/seagreen"
                 android:id="@+id/btnIngresar"
-                android:textColor="@color/red"
+                android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.15" />
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="@string/btnRegistro"
+                android:textAllCaps="false"
                 android:id="@+id/btnRegistro"
                 android:textSize="20dp"
-                android:textStyle="bold"
+                android:background="@color/royalblue"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/blue"
+                android:textColor="@color/white"
                 android:layout_weight="0.15"
                 android:textAlignment="center"/>
         </LinearLayout>
